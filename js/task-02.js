@@ -13,3 +13,16 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+
+const ingredientListEl = document.quarySelector(#ingredients);
+
+const items = ingredients.map((item) => {
+  const itemsEl = document.createElement("li");
+  itemsEl.classList.add("item");
+  items.textContent.add = item;
+  return itemsEl;
+});
+
+console.log(items);
+
+ingredientListEl.append(...items);
